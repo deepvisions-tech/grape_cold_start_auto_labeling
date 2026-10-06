@@ -14,30 +14,20 @@ This repository provides:
 - Anonymous experimental observations, statistical analysis, and result-table
   generation.
 
-## Paper results
-
-[Result tables (PDF)](reproduction/generated/result_tables.pdf) ·
-[CSVs and statistics](reproduction/generated/) ·
-[Reproduction guide](reproduction/README.md)
-
-Regenerate the tables from the supplied observations on CPU:
-
-```bash
-python -m pip install -r reproduction/requirements.txt
-python tools/reproduce_paper_tables.py \
-  --data reproduction/data \
-  --output outputs/paper_tables
-```
-
-Choose a new output directory. This CPU workflow recomputes tables and
-statistics from the supplied observations.
-Add `--check-reference` to compare the results with the supplied reference values.
+For detector training, evaluation, relabeling, and seed sweeps, see the
+[companion YOLO repository](https://github.com/deepvisions-tech/grape_cold_start_detection).
 
 ## Installation
 
-For image labeling, install CUDA-enabled PyTorch, torchvision, and
-[SAM 3](https://github.com/facebookresearch/sam3) following the upstream
-installation instructions. Then, from this repository:
+From this repository's root, clone SAM 3:
+
+```bash
+git clone https://github.com/facebookresearch/sam3.git
+```
+
+Follow the [SAM 3 installation instructions](https://github.com/facebookresearch/sam3#installation)
+to set up the environment and install SAM 3. Then, return to this repository's
+root and install this package:
 
 ```bash
 python -m pip install -e .
@@ -72,10 +62,24 @@ See [paper configurations](configs/reproduction/README.md) for the three
 label-recovery variants. For analysis of your own per-image results, run
 `grape-label-analysis --help`.
 
-## Detector code
+## Paper results
 
-The companion repository, `grape_cold_start_detection_yolo`, provides YOLO
-training, evaluation, relabeling, and seed sweeps.
+[Result tables (PDF)](reproduction/generated/result_tables.pdf) ·
+[CSVs and statistics](reproduction/generated/) ·
+[Reproduction guide](reproduction/README.md)
+
+Regenerate the tables from the supplied observations on CPU:
+
+```bash
+python -m pip install -r reproduction/requirements.txt
+python tools/reproduce_paper_tables.py \
+  --data reproduction/data \
+  --output outputs/paper_tables
+```
+
+Choose a new output directory. This CPU workflow recomputes tables and
+statistics from the supplied observations.
+Add `--check-reference` to compare the results with the supplied reference values.
 
 ## License
 
