@@ -1,0 +1,105 @@
+# Auto labeling pipeline config.
+# SAM3 text-prompt labeling with optional DINOv2 pairwise-change filtering.
+
+# DEVICE accepts auto, "0", "1", cuda:0, cuda:1.
+# Numeric/cuda:N values are applied as a single-GPU CUDA_VISIBLE_DEVICES mask.
+# CPU is not supported: the bundled SAM3 image model builds CUDA tensors while
+# the model is constructed, so a CUDA device is required.
+DEVICE: "0"
+# Enables SAM3 and DINOv2 fp16 inference.
+AMP: true
+
+LABEL_IMAGE_PATH: /path/to/image_or_image_dir
+LABEL_OUTPUT_DIR: /path/to/auto_labeling_outputs
+# Safe default: require an absent or empty output directory. Use "overwrite"
+# only when retaining unrelated/stale files in an existing directory is acceptable.
+OUTPUT_EXISTING_POLICY: error
+
+# SAM3 prompt mode:
+# "text"              — current text-prompt behavior.
+# "text_and_exemplar" — reuse exemplar embeddings and feed each text prompt in the same SAM3 forward pass.
+SAM3_PROMPT_MODE: text
+
+# Required for every prompt mode.
+TEXT_PROMPTS: []
+
+# Required when SAM3_PROMPT_MODE includes exemplar.
+# Each label_path is a YOLO txt file. class_id defaults to LABEL_CLASS_ID.
+SAM3_IMAGE_EXEMPLARS: []
+# Example:
+# SAM3_IMAGE_EXEMPLARS:
+#   - image_path: /path/to/exemplar.jpg
+#     label_path: /path/to/exemplar.txt
+#     class_id: 0
+
+LABEL_CLASS_ID: 0
+CLASS_NAMES:
+  0: magnesium deficiency
+
+# SAM3 runtime. SAM3_REPO_DIR is optional when SAM 3 is installed.
+SAM3_REPO_DIR:
+SAM3_LOAD_FROM_HF: true
+SAM3_CHECKPOINT_PATH:
+SAM3_CONFIDENCE_THRESHOLD: 0.5
+
+# Box post-processing.
+# Suppression is always applied; use 1.0 to keep every proposal.
+NMS_IOU_THRESHOLD: 0.6
+# Applied during NMS, before the optional DINOv2 gate. Blank means no cap.
+MAX_DETECTIONS_PER_IMAGE:
+MAX_IMAGES:
+DISABLE_TQDM: false
+
+# Groups images for parallel loading and for batched DINOv2 tile inference.
+# SAM3 always runs one image per forward pass, so this does not batch SAM3.
+AUTO_LABELING_BATCH_SIZE: 1
+# Threads for image loading, alignment, and filter bookkeeping, not GPU inference.
+AUTO_LABELING_NUM_WORKERS: 1
+# Saves per-image JPGs under LABEL_OUTPUT_DIR/visualizations.
+# If omitted, defaults to false only when PERFORMANCE_TEST_ENABLED is true.
+SAVE_VISUAL_OUTPUTS: true
+
+# Optional DINOv2 pairwise-change filtering.
+DINOV2_FILTER_ENABLED: false
+DINOV2_ORIGINAL_IMAGE_PATH:
+DINOV2_MODEL_NAME: dinov2_vitb14
+DINOV2_HUB_REPO: facebookresearch/dinov2
+DINOV2_REPO_DIR:
+DINOV2_CHECKPOINT_PATH:
+DINOV2_CHECKPOINT_FILENAME: dinov2_vitb14_pretrain.pth
+
+# Relative tiling derives source tiles from each image size.
+# DINOV2_INPUT_SIZE is the square size each source tile is resized to before
+# DINOv2 runs. It must be a multiple of the ViT patch size (14).
+DINOV2_INPUT_SIZE: 518
+DINOV2_TILE_WIDTH_DIVISOR: 3
+DINOV2_TILE_HEIGHT_DIVISOR: 2
+# Stride as a fraction of tile size.
+DINOV2_TILE_STRIDE_RATIO: 0.5
+# Source tiles per DINOv2 forward pass. Each tile submits an original and an
+# edited crop, so VRAM scales with twice this value.
+DINOV2_TILE_BATCH_SIZE: 1
+DINOV2_EDGE_SUPPRESS_PATCHES: 0
+# When true, a DINOv2 patch must be fully inside the SAM3 mask, not merely the SAM3 box.
+DINOV2_REQUIRE_PATCH_FULLY_INSIDE_SAM3_MASK: true
+# Writes DINOv2 diagnostic images under LABEL_OUTPUT_DIR/dinov2_visualizations.
+# Forced off while PERFORMANCE_TEST_ENABLED is true, even when set to true here.
+# summary.json records the effective value under dinov2.save_artifacts.
+DINOV2_SAVE_ARTIFACTS: false
+
+# Candidate filtering uses the p75 patch difference per SAM3 mask. Four or more
+# valid candidates use candidate-level Otsu; fewer candidates use this image-wide fallback.
+# Method for computing the fallback threshold.
+# "otsu"          — Otsu's method on all diff scores (falls back to percentile_80 if degenerate).
+# "percentile_80" — 80th percentile of all diff scores in the image.
+DINOV2_ADAPTIVE_THRESHOLD_METHOD: otsu
+
+# Positive values lower only the image-wide fallback threshold by this amount.
+DINOV2_ADAPTIVE_THRESHOLD_OFFSET: 0.0
+
+# Optional performance test mode.
+# When enabled, final predictions are evaluated against GT YOLO labels.
+# SAVE_VISUAL_OUTPUTS defaults to false in this mode unless explicitly set.
+PERFORMANCE_TEST_ENABLED: false
+GT_LABEL_DIR:
+PERFORMANCE_IOU_THRESHOLD: 0.5

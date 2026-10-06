@@ -1,0 +1,14 @@
+{
+  "contrast": "128 minus 512 adaptation images",
+  "n_training_seeds": 15,
+  "n_background_draws": 10,
+  "n_paired_cells": 150,
+  "bootstrap_seed": 42,
+  "bootstrap_resamples": 10000,
+  "resampling_order": "training-seed indices, then shared-background-draw indices",
+  "ap50_95_paired_effect": -0.00011431127725070267,
+  "crossed_bootstrap_ci95": [
+    -0.00039217406027850817,
+    0.00015043919762183474
+  ]
+}

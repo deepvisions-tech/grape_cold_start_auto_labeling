@@ -1,0 +1,16 @@
+{"image_id":"image_001","method":"sam3_only","tp":1,"fp":1,"fn":0}
+{"image_id":"image_002","method":"sam3_only","tp":0,"fp":0,"fn":1}
+{"image_id":"image_003","method":"sam3_only","tp":2,"fp":0,"fn":1}
+{"image_id":"image_004","method":"sam3_only","tp":0,"fp":1,"fn":1}
+{"image_id":"image_001","method":"sam3_exemplar","tp":1,"fp":0,"fn":0}
+{"image_id":"image_002","method":"sam3_exemplar","tp":1,"fp":1,"fn":0}
+{"image_id":"image_003","method":"sam3_exemplar","tp":2,"fp":1,"fn":1}
+{"image_id":"image_004","method":"sam3_exemplar","tp":0,"fp":0,"fn":1}
+{"image_id":"image_001","method":"sam3_exemplar_dinov2","tp":1,"fp":0,"fn":0,"candidate_pool_id":"pool_001"}
+{"image_id":"image_002","method":"sam3_exemplar_dinov2","tp":1,"fp":0,"fn":0,"candidate_pool_id":"pool_002"}
+{"image_id":"image_003","method":"sam3_exemplar_dinov2","tp":3,"fp":0,"fn":0,"candidate_pool_id":"pool_003"}
+{"image_id":"image_004","method":"sam3_exemplar_dinov2","tp":0,"fp":1,"fn":1,"candidate_pool_id":"pool_004"}
+{"image_id":"image_001","method":"sam3_exemplar_dinov2_pre_gate","tp":1,"fp":1,"fn":0,"candidate_pool_id":"pool_001"}
+{"image_id":"image_002","method":"sam3_exemplar_dinov2_pre_gate","tp":1,"fp":2,"fn":0,"candidate_pool_id":"pool_002"}
+{"image_id":"image_003","method":"sam3_exemplar_dinov2_pre_gate","tp":3,"fp":1,"fn":0,"candidate_pool_id":"pool_003"}
+{"image_id":"image_004","method":"sam3_exemplar_dinov2_pre_gate","tp":1,"fp":2,"fn":0,"candidate_pool_id":"pool_004"}

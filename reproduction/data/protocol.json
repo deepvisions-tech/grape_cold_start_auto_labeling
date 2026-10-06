@@ -1,0 +1,81 @@
+{
+  "schema_version": 2,
+  "scope": "fixed_main_and_low_label_subset_resampling_numeric_results",
+  "detector_runs": 600,
+  "deployment_runs": 210,
+  "seed_order": [
+    111,
+    222,
+    333,
+    444,
+    555,
+    666,
+    777,
+    888,
+    999,
+    1111,
+    1424,
+    1679,
+    2289,
+    8935,
+    9674
+  ],
+  "detector_bootstrap_resamples": 200000,
+  "detector_bootstrap_seed": 42,
+  "label_bootstrap_resamples": 50000,
+  "label_permutations": 500000,
+  "label_seed": 42,
+  "label_permutation_seed": 42,
+  "postprocessing": "YOLO26 default end-to-end; no NMS; configured IoU 0.7 inactive",
+  "adabn": {
+    "images": 128,
+    "max_stage": 1,
+    "sampling": "uniform_without_replacement",
+    "sample_seed": "training_seed",
+    "processing_order": "filename_order"
+  },
+  "curated_threshold": "validation_F1_before_AdaBN",
+  "deployment_threshold": "after_AdaBN; at_most_25_of_5000_background_tiles",
+  "ap_recalculation": "Not included; AP inputs are retained per-run COCOeval results",
+  "original_images_and_names": "not included",
+  "subset_resampling": {
+    "runs": 180,
+    "budgets": [
+      10,
+      25,
+      50
+    ],
+    "periods": [
+      "early",
+      "harvest"
+    ],
+    "data_subset_seed_order": [
+      409,
+      1824,
+      3657,
+      4012,
+      4506
+    ],
+    "training_seed_order": [
+      1679,
+      2289,
+      8935
+    ],
+    "bootstrap_resamples": 200000,
+    "bootstrap_seed": 42,
+    "bootstrap_method": "independent crossed-factor resampling; shared index matrices across all six contrasts",
+    "permutation_unit": "data_subset_seed_mean",
+    "holm_family_size": 6
+  },
+  "annotation_resampling": {
+    "seed": 42,
+    "round_resamples": 200000,
+    "density_resamples": 20000
+  },
+  "adabn_setting_selection": {
+    "bootstrap_seed": 42,
+    "bootstrap_resamples": 10000,
+    "background_draws": 10,
+    "evaluation": "primary 41-pair synthetic validation subset; stage 1"
+  }
+}

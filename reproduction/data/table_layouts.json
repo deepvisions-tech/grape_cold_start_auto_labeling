@@ -1,0 +1,1471 @@
+{
+  "detector_results.csv": {
+    "fields": [
+      "composition",
+      "test_period",
+      "scenario",
+      "real_positive_budget",
+      "synthetic_train_images",
+      "adaptation",
+      "n_seeds",
+      "precision_mean",
+      "precision_sample_sd",
+      "precision_gap",
+      "recall_mean",
+      "recall_sample_sd",
+      "recall_gap",
+      "f1_mean",
+      "f1_sample_sd",
+      "f1_gap",
+      "ap50_mean",
+      "ap50_sample_sd",
+      "ap50_gap",
+      "ap50_95_mean",
+      "ap50_95_sample_sd",
+      "ap50_95_gap"
+    ],
+    "rows": [
+      {
+        "composition": "curated",
+        "test_period": "early",
+        "scenario": "cold-start synthetic-only",
+        "real_positive_budget": "",
+        "synthetic_train_images": "2715",
+        "adaptation": "AdaBN",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "harvest",
+        "scenario": "cold-start synthetic-only",
+        "real_positive_budget": "",
+        "synthetic_train_images": "2715",
+        "adaptation": "AdaBN",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "early",
+        "scenario": "real-only",
+        "real_positive_budget": "10",
+        "synthetic_train_images": "",
+        "adaptation": "",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "harvest",
+        "scenario": "real-only",
+        "real_positive_budget": "10",
+        "synthetic_train_images": "",
+        "adaptation": "",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "early",
+        "scenario": "real-only",
+        "real_positive_budget": "25",
+        "synthetic_train_images": "",
+        "adaptation": "",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "harvest",
+        "scenario": "real-only",
+        "real_positive_budget": "25",
+        "synthetic_train_images": "",
+        "adaptation": "",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "early",
+        "scenario": "real-only",
+        "real_positive_budget": "50",
+        "synthetic_train_images": "",
+        "adaptation": "",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "harvest",
+        "scenario": "real-only",
+        "real_positive_budget": "50",
+        "synthetic_train_images": "",
+        "adaptation": "",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "early",
+        "scenario": "real-only",
+        "real_positive_budget": "100",
+        "synthetic_train_images": "",
+        "adaptation": "",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "harvest",
+        "scenario": "real-only",
+        "real_positive_budget": "100",
+        "synthetic_train_images": "",
+        "adaptation": "",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "early",
+        "scenario": "real-only",
+        "real_positive_budget": "214",
+        "synthetic_train_images": "",
+        "adaptation": "",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "harvest",
+        "scenario": "real-only",
+        "real_positive_budget": "214",
+        "synthetic_train_images": "",
+        "adaptation": "",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "early",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "10",
+        "synthetic_train_images": "2715",
+        "adaptation": "",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "harvest",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "10",
+        "synthetic_train_images": "2715",
+        "adaptation": "",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "early",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "25",
+        "synthetic_train_images": "2715",
+        "adaptation": "",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "harvest",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "25",
+        "synthetic_train_images": "2715",
+        "adaptation": "",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "early",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "50",
+        "synthetic_train_images": "2715",
+        "adaptation": "",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "harvest",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "50",
+        "synthetic_train_images": "2715",
+        "adaptation": "",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "early",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "100",
+        "synthetic_train_images": "2715",
+        "adaptation": "",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "harvest",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "100",
+        "synthetic_train_images": "2715",
+        "adaptation": "",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "early",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "214",
+        "synthetic_train_images": "2715",
+        "adaptation": "",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "harvest",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "214",
+        "synthetic_train_images": "2715",
+        "adaptation": "",
+        "n_seeds": "15"
+      }
+    ]
+  },
+  "deployment_detector_results.csv": {
+    "fields": [
+      "composition",
+      "test_period",
+      "scenario",
+      "real_positive_budget",
+      "synthetic_train_images",
+      "adaptation",
+      "threshold_tuning_background_images",
+      "max_fp_triggering_background_images",
+      "n_seeds",
+      "precision_mean",
+      "precision_sample_sd",
+      "precision_gap",
+      "recall_mean",
+      "recall_sample_sd",
+      "recall_gap",
+      "f1_mean",
+      "f1_sample_sd",
+      "f1_gap",
+      "ap50_mean",
+      "ap50_sample_sd",
+      "ap50_gap",
+      "ap50_95_mean",
+      "ap50_95_sample_sd",
+      "ap50_95_gap",
+      "false_alert_image_rate_mean",
+      "false_alert_image_rate_sample_sd",
+      "false_alert_image_rate_gap",
+      "false_alert_images_mean",
+      "false_alert_images_sample_sd",
+      "false_alert_images_gap"
+    ],
+    "rows": [
+      {
+        "composition": "deployment",
+        "test_period": "early",
+        "scenario": "cold-start synthetic-only",
+        "real_positive_budget": "",
+        "synthetic_train_images": "2715",
+        "adaptation": "AdaBN",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "harvest",
+        "scenario": "cold-start synthetic-only",
+        "real_positive_budget": "",
+        "synthetic_train_images": "2715",
+        "adaptation": "AdaBN",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "early",
+        "scenario": "real-only",
+        "real_positive_budget": "10",
+        "synthetic_train_images": "",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "harvest",
+        "scenario": "real-only",
+        "real_positive_budget": "10",
+        "synthetic_train_images": "",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "early",
+        "scenario": "real-only",
+        "real_positive_budget": "100",
+        "synthetic_train_images": "",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "harvest",
+        "scenario": "real-only",
+        "real_positive_budget": "100",
+        "synthetic_train_images": "",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "early",
+        "scenario": "real-only",
+        "real_positive_budget": "214",
+        "synthetic_train_images": "",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "harvest",
+        "scenario": "real-only",
+        "real_positive_budget": "214",
+        "synthetic_train_images": "",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "early",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "10",
+        "synthetic_train_images": "2715",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "harvest",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "10",
+        "synthetic_train_images": "2715",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "early",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "100",
+        "synthetic_train_images": "2715",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "harvest",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "100",
+        "synthetic_train_images": "2715",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "early",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "214",
+        "synthetic_train_images": "2715",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "harvest",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "214",
+        "synthetic_train_images": "2715",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15"
+      }
+    ]
+  },
+  "deployment_image_results.csv": {
+    "fields": [
+      "composition",
+      "test_period",
+      "scenario",
+      "real_positive_budget",
+      "synthetic_train_images",
+      "adaptation",
+      "threshold_tuning_background_images",
+      "max_fp_triggering_background_images",
+      "n_seeds",
+      "positive_frames",
+      "background_frames",
+      "ap50_95_mean",
+      "ap50_95_sample_sd",
+      "ap50_95_gap",
+      "source_frame_recall_mean",
+      "source_frame_recall_sample_sd",
+      "source_frame_recall_gap",
+      "source_frame_tp_mean",
+      "source_frame_tp_sample_sd",
+      "source_frame_tp_gap",
+      "false_alert_frames_mean",
+      "false_alert_frames_sample_sd",
+      "false_alert_frames_gap",
+      "false_alert_frame_fraction_mean",
+      "false_alert_frame_fraction_sample_sd",
+      "false_alert_frame_fraction_gap"
+    ],
+    "rows": [
+      {
+        "composition": "deployment",
+        "test_period": "early",
+        "scenario": "cold-start synthetic-only",
+        "real_positive_budget": "",
+        "synthetic_train_images": "2715",
+        "adaptation": "AdaBN",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15",
+        "positive_frames": "90",
+        "background_frames": "1499"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "harvest",
+        "scenario": "cold-start synthetic-only",
+        "real_positive_budget": "",
+        "synthetic_train_images": "2715",
+        "adaptation": "AdaBN",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15",
+        "positive_frames": "202",
+        "background_frames": "1028"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "early",
+        "scenario": "real-only",
+        "real_positive_budget": "10",
+        "synthetic_train_images": "",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15",
+        "positive_frames": "90",
+        "background_frames": "1499"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "harvest",
+        "scenario": "real-only",
+        "real_positive_budget": "10",
+        "synthetic_train_images": "",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15",
+        "positive_frames": "202",
+        "background_frames": "1028"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "early",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "10",
+        "synthetic_train_images": "2715",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15",
+        "positive_frames": "90",
+        "background_frames": "1499"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "harvest",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "10",
+        "synthetic_train_images": "2715",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15",
+        "positive_frames": "202",
+        "background_frames": "1028"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "early",
+        "scenario": "real-only",
+        "real_positive_budget": "100",
+        "synthetic_train_images": "",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15",
+        "positive_frames": "90",
+        "background_frames": "1499"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "harvest",
+        "scenario": "real-only",
+        "real_positive_budget": "100",
+        "synthetic_train_images": "",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15",
+        "positive_frames": "202",
+        "background_frames": "1028"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "early",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "100",
+        "synthetic_train_images": "2715",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15",
+        "positive_frames": "90",
+        "background_frames": "1499"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "harvest",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "100",
+        "synthetic_train_images": "2715",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15",
+        "positive_frames": "202",
+        "background_frames": "1028"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "early",
+        "scenario": "real-only",
+        "real_positive_budget": "214",
+        "synthetic_train_images": "",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15",
+        "positive_frames": "90",
+        "background_frames": "1499"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "harvest",
+        "scenario": "real-only",
+        "real_positive_budget": "214",
+        "synthetic_train_images": "",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15",
+        "positive_frames": "202",
+        "background_frames": "1028"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "early",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "214",
+        "synthetic_train_images": "2715",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15",
+        "positive_frames": "90",
+        "background_frames": "1499"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "harvest",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "214",
+        "synthetic_train_images": "2715",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15",
+        "positive_frames": "202",
+        "background_frames": "1028"
+      }
+    ]
+  },
+  "deployment_tile_results.csv": {
+    "fields": [
+      "composition",
+      "test_period",
+      "scenario",
+      "real_positive_budget",
+      "synthetic_train_images",
+      "adaptation",
+      "threshold_tuning_background_images",
+      "max_fp_triggering_background_images",
+      "n_seeds",
+      "positive_tiles",
+      "background_tiles",
+      "ap50_95_mean",
+      "ap50_95_sample_sd",
+      "ap50_95_gap",
+      "tile_level_recall_mean",
+      "tile_level_recall_sample_sd",
+      "tile_level_recall_gap",
+      "image_level_tp_mean",
+      "image_level_tp_sample_sd",
+      "image_level_tp_gap",
+      "false_alert_tiles_mean",
+      "false_alert_tiles_sample_sd",
+      "false_alert_tiles_gap",
+      "false_alert_tile_fraction_mean",
+      "false_alert_tile_fraction_sample_sd",
+      "false_alert_tile_fraction_gap"
+    ],
+    "rows": [
+      {
+        "composition": "deployment",
+        "test_period": "early",
+        "scenario": "cold-start synthetic-only",
+        "real_positive_budget": "",
+        "synthetic_train_images": "2715",
+        "adaptation": "AdaBN",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15",
+        "positive_tiles": "135",
+        "background_tiles": "12577"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "harvest",
+        "scenario": "cold-start synthetic-only",
+        "real_positive_budget": "",
+        "synthetic_train_images": "2715",
+        "adaptation": "AdaBN",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15",
+        "positive_tiles": "391",
+        "background_tiles": "9449"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "early",
+        "scenario": "real-only",
+        "real_positive_budget": "10",
+        "synthetic_train_images": "",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15",
+        "positive_tiles": "135",
+        "background_tiles": "12577"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "harvest",
+        "scenario": "real-only",
+        "real_positive_budget": "10",
+        "synthetic_train_images": "",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15",
+        "positive_tiles": "391",
+        "background_tiles": "9449"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "early",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "10",
+        "synthetic_train_images": "2715",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15",
+        "positive_tiles": "135",
+        "background_tiles": "12577"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "harvest",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "10",
+        "synthetic_train_images": "2715",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15",
+        "positive_tiles": "391",
+        "background_tiles": "9449"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "early",
+        "scenario": "real-only",
+        "real_positive_budget": "100",
+        "synthetic_train_images": "",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15",
+        "positive_tiles": "135",
+        "background_tiles": "12577"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "harvest",
+        "scenario": "real-only",
+        "real_positive_budget": "100",
+        "synthetic_train_images": "",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15",
+        "positive_tiles": "391",
+        "background_tiles": "9449"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "early",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "100",
+        "synthetic_train_images": "2715",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15",
+        "positive_tiles": "135",
+        "background_tiles": "12577"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "harvest",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "100",
+        "synthetic_train_images": "2715",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15",
+        "positive_tiles": "391",
+        "background_tiles": "9449"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "early",
+        "scenario": "real-only",
+        "real_positive_budget": "214",
+        "synthetic_train_images": "",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15",
+        "positive_tiles": "135",
+        "background_tiles": "12577"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "harvest",
+        "scenario": "real-only",
+        "real_positive_budget": "214",
+        "synthetic_train_images": "",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15",
+        "positive_tiles": "391",
+        "background_tiles": "9449"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "early",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "214",
+        "synthetic_train_images": "2715",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15",
+        "positive_tiles": "135",
+        "background_tiles": "12577"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "harvest",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "214",
+        "synthetic_train_images": "2715",
+        "adaptation": "",
+        "threshold_tuning_background_images": "5000",
+        "max_fp_triggering_background_images": "25",
+        "n_seeds": "15",
+        "positive_tiles": "391",
+        "background_tiles": "9449"
+      }
+    ]
+  },
+  "generation_comparison_results.csv": {
+    "fields": [
+      "composition",
+      "test_period",
+      "generation_arm",
+      "synthetic_train_images",
+      "synthetic_validation_images",
+      "adaptation",
+      "n_seeds",
+      "comparison_status",
+      "precision_mean",
+      "precision_sample_sd",
+      "precision_gap",
+      "recall_mean",
+      "recall_sample_sd",
+      "recall_gap",
+      "f1_mean",
+      "f1_sample_sd",
+      "f1_gap",
+      "ap50_mean",
+      "ap50_sample_sd",
+      "ap50_gap",
+      "ap50_95_mean",
+      "ap50_95_sample_sd",
+      "ap50_95_gap"
+    ],
+    "rows": [
+      {
+        "composition": "curated",
+        "test_period": "early",
+        "generation_arm": "prompt-only",
+        "synthetic_train_images": "2715",
+        "synthetic_validation_images": "301",
+        "adaptation": "no-AdaBN",
+        "n_seeds": "15",
+        "comparison_status": "final_image_count_matched_full_pipeline"
+      },
+      {
+        "composition": "curated",
+        "test_period": "harvest",
+        "generation_arm": "prompt-only",
+        "synthetic_train_images": "2715",
+        "synthetic_validation_images": "301",
+        "adaptation": "no-AdaBN",
+        "n_seeds": "15",
+        "comparison_status": "final_image_count_matched_full_pipeline"
+      },
+      {
+        "composition": "curated",
+        "test_period": "early",
+        "generation_arm": "real-background editing",
+        "synthetic_train_images": "2715",
+        "synthetic_validation_images": "301",
+        "adaptation": "no-AdaBN",
+        "n_seeds": "15",
+        "comparison_status": "final_image_count_matched_full_pipeline"
+      },
+      {
+        "composition": "curated",
+        "test_period": "harvest",
+        "generation_arm": "real-background editing",
+        "synthetic_train_images": "2715",
+        "synthetic_validation_images": "301",
+        "adaptation": "no-AdaBN",
+        "n_seeds": "15",
+        "comparison_status": "final_image_count_matched_full_pipeline"
+      }
+    ]
+  },
+  "synthetic_only_improvement_results.csv": {
+    "fields": [
+      "composition",
+      "test_period",
+      "arm",
+      "synthetic_train_images",
+      "n_seeds",
+      "precision_mean",
+      "precision_sample_sd",
+      "precision_gap",
+      "recall_mean",
+      "recall_sample_sd",
+      "recall_gap",
+      "f1_mean",
+      "f1_sample_sd",
+      "f1_gap",
+      "ap50_mean",
+      "ap50_sample_sd",
+      "ap50_gap",
+      "ap50_95_mean",
+      "ap50_95_sample_sd",
+      "ap50_95_gap"
+    ],
+    "rows": [
+      {
+        "composition": "curated",
+        "test_period": "early",
+        "arm": "no-AdaBN",
+        "synthetic_train_images": "2715",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "harvest",
+        "arm": "no-AdaBN",
+        "synthetic_train_images": "2715",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "early",
+        "arm": "+AdaBN",
+        "synthetic_train_images": "2715",
+        "n_seeds": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "harvest",
+        "arm": "+AdaBN",
+        "synthetic_train_images": "2715",
+        "n_seeds": "15"
+      }
+    ]
+  },
+  "detector_paired_effects.csv": {
+    "fields": [
+      "composition",
+      "test_period",
+      "real_positive_budget",
+      "n_seed_pairs",
+      "ap50_95_paired_effect",
+      "bootstrap_ci_lower",
+      "bootstrap_ci_upper",
+      "n_positive",
+      "raw_permutation_p",
+      "holm_adjusted_p"
+    ],
+    "rows": [
+      {
+        "composition": "curated",
+        "test_period": "early",
+        "real_positive_budget": "10",
+        "n_seed_pairs": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "early",
+        "real_positive_budget": "25",
+        "n_seed_pairs": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "early",
+        "real_positive_budget": "50",
+        "n_seed_pairs": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "early",
+        "real_positive_budget": "100",
+        "n_seed_pairs": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "early",
+        "real_positive_budget": "214",
+        "n_seed_pairs": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "harvest",
+        "real_positive_budget": "10",
+        "n_seed_pairs": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "harvest",
+        "real_positive_budget": "25",
+        "n_seed_pairs": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "harvest",
+        "real_positive_budget": "50",
+        "n_seed_pairs": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "harvest",
+        "real_positive_budget": "100",
+        "n_seed_pairs": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "harvest",
+        "real_positive_budget": "214",
+        "n_seed_pairs": "15"
+      }
+    ]
+  },
+  "deployment_paired_effects.csv": {
+    "fields": [
+      "composition",
+      "test_period",
+      "real_positive_budget",
+      "contrast",
+      "n_seed_pairs",
+      "ap50_95_paired_effect",
+      "bootstrap_ci_lower",
+      "bootstrap_ci_upper",
+      "n_positive",
+      "raw_permutation_p",
+      "holm_adjusted_p"
+    ],
+    "rows": [
+      {
+        "composition": "deployment",
+        "test_period": "early",
+        "real_positive_budget": "10",
+        "contrast": "synthetic-pretrain + fine-tune minus real-only",
+        "n_seed_pairs": "15"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "early",
+        "real_positive_budget": "100",
+        "contrast": "synthetic-pretrain + fine-tune minus real-only",
+        "n_seed_pairs": "15"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "early",
+        "real_positive_budget": "214",
+        "contrast": "synthetic-pretrain + fine-tune minus real-only",
+        "n_seed_pairs": "15"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "harvest",
+        "real_positive_budget": "10",
+        "contrast": "synthetic-pretrain + fine-tune minus real-only",
+        "n_seed_pairs": "15"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "harvest",
+        "real_positive_budget": "100",
+        "contrast": "synthetic-pretrain + fine-tune minus real-only",
+        "n_seed_pairs": "15"
+      },
+      {
+        "composition": "deployment",
+        "test_period": "harvest",
+        "real_positive_budget": "214",
+        "contrast": "synthetic-pretrain + fine-tune minus real-only",
+        "n_seed_pairs": "15"
+      }
+    ]
+  },
+  "generation_comparison_paired_effects.csv": {
+    "fields": [
+      "composition",
+      "test_period",
+      "contrast",
+      "comparison_status",
+      "n_seed_pairs",
+      "ap50_95_paired_effect",
+      "bootstrap_ci_lower",
+      "bootstrap_ci_upper",
+      "n_positive",
+      "raw_permutation_p",
+      "holm_adjusted_p"
+    ],
+    "rows": [
+      {
+        "composition": "curated",
+        "test_period": "early",
+        "contrast": "real-background editing minus prompt-only",
+        "comparison_status": "final_image_count_matched_full_pipeline",
+        "n_seed_pairs": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "harvest",
+        "contrast": "real-background editing minus prompt-only",
+        "comparison_status": "final_image_count_matched_full_pipeline",
+        "n_seed_pairs": "15"
+      }
+    ]
+  },
+  "synthetic_only_improvement_paired_effects.csv": {
+    "fields": [
+      "composition",
+      "test_period",
+      "contrast",
+      "n_seed_pairs",
+      "ap50_95_paired_effect",
+      "bootstrap_ci_lower",
+      "bootstrap_ci_upper",
+      "n_positive",
+      "raw_permutation_p",
+      "holm_adjusted_p"
+    ],
+    "rows": [
+      {
+        "composition": "curated",
+        "test_period": "early",
+        "contrast": "+AdaBN minus no-AdaBN",
+        "n_seed_pairs": "15"
+      },
+      {
+        "composition": "curated",
+        "test_period": "harvest",
+        "contrast": "+AdaBN minus no-AdaBN",
+        "n_seed_pairs": "15"
+      }
+    ]
+  },
+  "cold_start_ft10_paired_effects.csv": {
+    "fields": [
+      "composition",
+      "test_period",
+      "contrast",
+      "n_seed_pairs",
+      "analysis_status",
+      "ap50_95_paired_effect",
+      "bootstrap_ci_lower",
+      "bootstrap_ci_upper",
+      "n_positive",
+      "raw_permutation_p"
+    ],
+    "rows": [
+      {
+        "composition": "curated",
+        "test_period": "early",
+        "contrast": "FT10 minus cold-start AdaBN128 stage1",
+        "n_seed_pairs": "15",
+        "analysis_status": "post-hoc descriptive"
+      },
+      {
+        "composition": "curated",
+        "test_period": "harvest",
+        "contrast": "FT10 minus cold-start AdaBN128 stage1",
+        "n_seed_pairs": "15",
+        "analysis_status": "post-hoc descriptive"
+      }
+    ]
+  },
+  "label_recovery_results.csv": {
+    "fields": [
+      "method",
+      "uses_cross_image_exemplar",
+      "uses_dinov2",
+      "trained_method",
+      "n_images",
+      "n_gt_boxes",
+      "matching_iou",
+      "f1",
+      "precision",
+      "recall",
+      "tp",
+      "fp",
+      "fn"
+    ],
+    "rows": [
+      {
+        "method": "SAM3-only",
+        "matching_iou": "0.5"
+      },
+      {
+        "method": "SAM3 + image exemplar",
+        "matching_iou": "0.5"
+      },
+      {
+        "method": "SAM3 + image exemplar + DINOv2",
+        "matching_iou": "0.5"
+      },
+      {
+        "method": "YOLO26x relabeler",
+        "matching_iou": "0.5"
+      }
+    ]
+  },
+  "relabeling_results.csv": {
+    "fields": [
+      "workflow",
+      "n_images",
+      "n_gt_labels",
+      "human_time_seconds",
+      "human_time_hhmmss",
+      "auto_label_time_seconds",
+      "auto_label_time_mmss",
+      "human_sec_per_image",
+      "human_sec_per_gt_label",
+      "reduction_vs_manual_per_image",
+      "reduction_vs_manual_per_gt_label",
+      "reviewed_label_f1",
+      "reviewed_label_tp",
+      "reviewed_label_fp",
+      "reviewed_label_fn"
+    ],
+    "rows": [
+      {
+        "workflow": "Fully manual"
+      },
+      {
+        "workflow": "SAM3 + image exemplar + DINOv2 then human review"
+      },
+      {
+        "workflow": "YOLO26x then human review"
+      }
+    ]
+  },
+  "annotation_density_results.csv": {
+    "fields": [
+      "workflow",
+      "density_group",
+      "density_rule",
+      "n_images",
+      "n_gt_labels",
+      "avg_normalized_gt_box_area",
+      "median_human_sec_per_gt_label"
+    ],
+    "rows": [
+      {
+        "workflow": "Fully manual",
+        "density_group": "Low",
+        "density_rule": "gt_boxes_per_image <= 8"
+      },
+      {
+        "workflow": "Fully manual",
+        "density_group": "High",
+        "density_rule": "gt_boxes_per_image > 8"
+      },
+      {
+        "workflow": "SAM3 + image exemplar + DINOv2 then human review",
+        "density_group": "Low",
+        "density_rule": "gt_boxes_per_image <= 8"
+      },
+      {
+        "workflow": "SAM3 + image exemplar + DINOv2 then human review",
+        "density_group": "High",
+        "density_rule": "gt_boxes_per_image > 8"
+      },
+      {
+        "workflow": "YOLO26x then human review",
+        "density_group": "Low",
+        "density_rule": "gt_boxes_per_image <= 8"
+      },
+      {
+        "workflow": "YOLO26x then human review",
+        "density_group": "High",
+        "density_rule": "gt_boxes_per_image > 8"
+      }
+    ]
+  },
+  "low_budget_subset_results.csv": {
+    "fields": [
+      "composition",
+      "test_period",
+      "scenario",
+      "real_positive_budget",
+      "n_data_subset_seeds",
+      "n_training_seeds_per_subset",
+      "n_runs",
+      "precision_mean",
+      "precision_sample_sd",
+      "precision_gap",
+      "recall_mean",
+      "recall_sample_sd",
+      "recall_gap",
+      "f1_mean",
+      "f1_sample_sd",
+      "f1_gap",
+      "ap50_mean",
+      "ap50_sample_sd",
+      "ap50_gap",
+      "ap50_95_mean",
+      "ap50_95_sample_sd",
+      "ap50_95_gap",
+      "source_campaign"
+    ],
+    "rows": [
+      {
+        "composition": "curated",
+        "test_period": "early",
+        "scenario": "real-only",
+        "real_positive_budget": "10",
+        "source_campaign": "magnesium_deficiency_random_budget_v1"
+      },
+      {
+        "composition": "curated",
+        "test_period": "early",
+        "scenario": "real-only",
+        "real_positive_budget": "25",
+        "source_campaign": "magnesium_deficiency_random_budget_v1"
+      },
+      {
+        "composition": "curated",
+        "test_period": "early",
+        "scenario": "real-only",
+        "real_positive_budget": "50",
+        "source_campaign": "magnesium_deficiency_random_budget_v1"
+      },
+      {
+        "composition": "curated",
+        "test_period": "harvest",
+        "scenario": "real-only",
+        "real_positive_budget": "10",
+        "source_campaign": "magnesium_deficiency_random_budget_real_harvest_test_v1"
+      },
+      {
+        "composition": "curated",
+        "test_period": "harvest",
+        "scenario": "real-only",
+        "real_positive_budget": "25",
+        "source_campaign": "magnesium_deficiency_random_budget_real_harvest_test_v1"
+      },
+      {
+        "composition": "curated",
+        "test_period": "harvest",
+        "scenario": "real-only",
+        "real_positive_budget": "50",
+        "source_campaign": "magnesium_deficiency_random_budget_real_harvest_test_v1"
+      },
+      {
+        "composition": "curated",
+        "test_period": "early",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "10",
+        "source_campaign": "magnesium_deficiency_random_budget_finetune_v1"
+      },
+      {
+        "composition": "curated",
+        "test_period": "early",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "25",
+        "source_campaign": "magnesium_deficiency_random_budget_finetune_v1"
+      },
+      {
+        "composition": "curated",
+        "test_period": "early",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "50",
+        "source_campaign": "magnesium_deficiency_random_budget_finetune_v1"
+      },
+      {
+        "composition": "curated",
+        "test_period": "harvest",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "10",
+        "source_campaign": "magnesium_deficiency_random_budget_finetune_harvest_test_v1"
+      },
+      {
+        "composition": "curated",
+        "test_period": "harvest",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "25",
+        "source_campaign": "magnesium_deficiency_random_budget_finetune_harvest_test_v1"
+      },
+      {
+        "composition": "curated",
+        "test_period": "harvest",
+        "scenario": "synthetic-pretrain + fine-tune",
+        "real_positive_budget": "50",
+        "source_campaign": "magnesium_deficiency_random_budget_finetune_harvest_test_v1"
+      }
+    ]
+  },
+  "low_budget_subset_paired_effects.csv": {
+    "fields": [
+      "composition",
+      "test_period",
+      "real_positive_budget",
+      "contrast",
+      "n_data_subset_seeds",
+      "n_training_seeds",
+      "n_paired_cells",
+      "ap50_95_paired_effect",
+      "two_way_bootstrap_ci_lower",
+      "two_way_bootstrap_ci_upper",
+      "n_positive_cells",
+      "n_positive_subset_means",
+      "permutation_unit",
+      "raw_permutation_p",
+      "holm_adjusted_p"
+    ],
+    "rows": [
+      {
+        "composition": "curated",
+        "test_period": "early",
+        "real_positive_budget": "10",
+        "contrast": "synthetic-pretrain + fine-tune minus real-only"
+      },
+      {
+        "composition": "curated",
+        "test_period": "early",
+        "real_positive_budget": "25",
+        "contrast": "synthetic-pretrain + fine-tune minus real-only"
+      },
+      {
+        "composition": "curated",
+        "test_period": "early",
+        "real_positive_budget": "50",
+        "contrast": "synthetic-pretrain + fine-tune minus real-only"
+      },
+      {
+        "composition": "curated",
+        "test_period": "harvest",
+        "real_positive_budget": "10",
+        "contrast": "synthetic-pretrain + fine-tune minus real-only"
+      },
+      {
+        "composition": "curated",
+        "test_period": "harvest",
+        "real_positive_budget": "25",
+        "contrast": "synthetic-pretrain + fine-tune minus real-only"
+      },
+      {
+        "composition": "curated",
+        "test_period": "harvest",
+        "real_positive_budget": "50",
+        "contrast": "synthetic-pretrain + fine-tune minus real-only"
+      }
+    ]
+  }
+}

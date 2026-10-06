@@ -1,0 +1,96 @@
+{
+  "tables_generated": 17,
+  "reference_checks": [
+    {
+      "table": "detector_results.csv",
+      "rows": 22,
+      "exact_match": true
+    },
+    {
+      "table": "deployment_detector_results.csv",
+      "rows": 14,
+      "exact_match": true
+    },
+    {
+      "table": "deployment_image_results.csv",
+      "rows": 14,
+      "exact_match": true
+    },
+    {
+      "table": "deployment_tile_results.csv",
+      "rows": 14,
+      "exact_match": true
+    },
+    {
+      "table": "generation_comparison_results.csv",
+      "rows": 4,
+      "exact_match": true
+    },
+    {
+      "table": "synthetic_only_improvement_results.csv",
+      "rows": 4,
+      "exact_match": true
+    },
+    {
+      "table": "detector_paired_effects.csv",
+      "rows": 10,
+      "exact_match": true
+    },
+    {
+      "table": "deployment_paired_effects.csv",
+      "rows": 6,
+      "exact_match": true
+    },
+    {
+      "table": "generation_comparison_paired_effects.csv",
+      "rows": 2,
+      "exact_match": true
+    },
+    {
+      "table": "synthetic_only_improvement_paired_effects.csv",
+      "rows": 2,
+      "exact_match": true
+    },
+    {
+      "table": "cold_start_ft10_paired_effects.csv",
+      "rows": 2,
+      "exact_match": true
+    },
+    {
+      "table": "low_budget_subset_results.csv",
+      "rows": 12,
+      "exact_match": true
+    },
+    {
+      "table": "low_budget_subset_paired_effects.csv",
+      "rows": 6,
+      "exact_match": true
+    },
+    {
+      "table": "relabeling_results.csv",
+      "rows": 3,
+      "exact_match": true
+    },
+    {
+      "table": "annotation_density_results.csv",
+      "rows": 6,
+      "exact_match": true
+    },
+    {
+      "table": "annotation_block_times.csv",
+      "rows": 10,
+      "exact_match": true
+    },
+    {
+      "table": "label_recovery_results.csv",
+      "rows": 4,
+      "exact_match": true
+    }
+  ],
+  "fixed_main_runs": 600,
+  "subset_resampling_runs": 180,
+  "adabn_selection_runs": 300,
+  "paper_display_values_checked": 128,
+  "scope": "fixed_main_and_low_label_subset_resampling_numeric_results",
+  "images_or_model_libraries_required": false
+}

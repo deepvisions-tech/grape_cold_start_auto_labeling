@@ -1,0 +1,5 @@
+method,uses_cross_image_exemplar,uses_dinov2,trained_method,n_images,n_gt_boxes,matching_iou,f1,precision,recall,tp,fp,fn
+SAM3-only,false,false,false,300,4334,0.5,0.5472,0.9080,0.3916,1697,172,2637
+SAM3 + image exemplar,true,false,false,300,4334,0.5,0.6416,0.6633,0.6214,2693,1367,1641
+SAM3 + image exemplar + DINOv2,true,true,false,300,4334,0.5,0.7410,0.8760,0.6421,2783,394,1551
+YOLO26x relabeler,false,false,true,300,4334,0.5,0.8703,0.9451,0.8064,3495,203,839

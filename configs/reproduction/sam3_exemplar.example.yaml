@@ -1,0 +1,44 @@
+# Reported setting: SAM3 + cross-image exemplar comparison arm.
+# Replace all /path/to/... placeholders before use.
+
+DEVICE: "0"
+AMP: true
+
+LABEL_IMAGE_PATH: /path/to/generated_evaluation_images
+LABEL_OUTPUT_DIR: /path/to/outputs/sam3_exemplar_result
+OUTPUT_EXISTING_POLICY: error
+
+SAM3_PROMPT_MODE: text_and_exemplar
+TEXT_PROMPTS:
+  - single chlorotic grape leaf with visible green veins
+  - individual grape leaf with interveinal chlorosis
+  - single grape leaf showing yellow-green interveinal chlorosis
+
+SAM3_IMAGE_EXEMPLARS:
+  - image_path: /path/to/reference_exemplar.jpg
+    label_path: /path/to/reference_exemplar.txt
+    class_id: 0
+
+LABEL_CLASS_ID: 0
+# This string is output metadata only and does not affect predictions or metrics.
+CLASS_NAMES:
+  0: magnesium deficiency
+
+SAM3_REPO_DIR:
+SAM3_LOAD_FROM_HF: true
+SAM3_CHECKPOINT_PATH:
+SAM3_CONFIDENCE_THRESHOLD: 0.7
+
+NMS_IOU_THRESHOLD: 0.6
+MAX_DETECTIONS_PER_IMAGE:
+MAX_IMAGES:
+DISABLE_TQDM: false
+SAVE_VISUAL_OUTPUTS: false
+AUTO_LABELING_BATCH_SIZE: 4
+AUTO_LABELING_NUM_WORKERS: 4
+
+DINOV2_FILTER_ENABLED: false
+
+PERFORMANCE_TEST_ENABLED: true
+GT_LABEL_DIR: /path/to/generated_evaluation_gt_labels
+PERFORMANCE_IOU_THRESHOLD: 0.5

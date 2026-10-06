@@ -1,0 +1,11 @@
+round,first_block,second_block,third_block,manual_block_time_mmss,manual_block_time_seconds,sam3_exemplar_dinov2_block_time_mmss,sam3_exemplar_dinov2_block_time_seconds,yolo26x_block_time_mmss,yolo26x_block_time_seconds
+1,M1,S1,Y1,11:39,699,07:22,442,03:24,204
+2,S2,Y2,M2,08:11,491,05:46,346,04:21,261
+3,Y3,M3,S3,08:13,493,05:10,310,04:50,290
+4,M4,Y4,S4,09:18,558,04:27,267,03:08,188
+5,Y5,S5,M5,08:20,500,04:55,295,04:23,263
+6,S6,M6,Y6,09:10,550,04:20,260,04:37,277
+7,M7,S7,Y7,08:54,534,05:34,334,04:57,297
+8,S8,Y8,M8,09:02,542,04:40,280,04:08,248
+9,Y9,M9,S9,09:51,591,04:38,278,02:59,179
+10,M10,Y10,S10,08:02,482,05:06,306,04:12,252

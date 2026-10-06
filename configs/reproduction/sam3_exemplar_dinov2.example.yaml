@@ -1,0 +1,66 @@
+# Reported setting: SAM3 + cross-image exemplar + DINOv2 pipeline.
+# Replace all /path/to/... placeholders before use.
+
+DEVICE: "0"
+AMP: true
+
+LABEL_IMAGE_PATH: /path/to/generated_evaluation_images
+LABEL_OUTPUT_DIR: /path/to/outputs/sam3_exemplar_dinov2_result
+OUTPUT_EXISTING_POLICY: error
+
+SAM3_PROMPT_MODE: text_and_exemplar
+TEXT_PROMPTS:
+  - single chlorotic grape leaf with visible green veins
+  - individual grape leaf with interveinal chlorosis
+  - single grape leaf showing yellow-green interveinal chlorosis
+
+SAM3_IMAGE_EXEMPLARS:
+  - image_path: /path/to/reference_exemplar.jpg
+    label_path: /path/to/reference_exemplar.txt
+    class_id: 0
+
+LABEL_CLASS_ID: 0
+# This string is output metadata only and does not affect predictions or metrics.
+CLASS_NAMES:
+  0: magnesium deficiency
+
+SAM3_REPO_DIR:
+SAM3_LOAD_FROM_HF: true
+SAM3_CHECKPOINT_PATH:
+SAM3_CONFIDENCE_THRESHOLD: 0.5
+
+NMS_IOU_THRESHOLD: 0.6
+MAX_DETECTIONS_PER_IMAGE:
+MAX_IMAGES:
+DISABLE_TQDM: false
+SAVE_VISUAL_OUTPUTS: false
+AUTO_LABELING_BATCH_SIZE: 4
+AUTO_LABELING_NUM_WORKERS: 4
+
+DINOV2_FILTER_ENABLED: true
+DINOV2_ORIGINAL_IMAGE_PATH: /path/to/original_background_images
+DINOV2_MODEL_NAME: dinov2_vitb14
+DINOV2_HUB_REPO: facebookresearch/dinov2
+DINOV2_REPO_DIR:
+DINOV2_CHECKPOINT_PATH:
+DINOV2_CHECKPOINT_FILENAME: dinov2_vitb14_pretrain.pth
+DINOV2_INPUT_SIZE: 518
+DINOV2_TILE_WIDTH_DIVISOR: 3
+DINOV2_TILE_HEIGHT_DIVISOR: 2
+DINOV2_TILE_STRIDE_RATIO: 0.67
+DINOV2_TILE_BATCH_SIZE: 16
+
+DINOV2_EDGE_SUPPRESS_PATCHES: 2
+DINOV2_REQUIRE_PATCH_FULLY_INSIDE_SAM3_MASK: true
+DINOV2_SAVE_ARTIFACTS: false
+# Candidate score: p75 cosine difference of patches fully inside each SAM3 mask.
+# Four or more valid candidate scores use candidate-level Otsu directly.
+# Fewer than four use an image-wide Otsu cutoff over all patch scores.
+# Degenerate/uniform or very-low Otsu cutoffs fall back to percentile 80.
+DINOV2_ADAPTIVE_THRESHOLD_METHOD: otsu
+# Subtracted only from the image-wide fallback cutoff, then clamped at zero.
+DINOV2_ADAPTIVE_THRESHOLD_OFFSET: 0.06
+
+PERFORMANCE_TEST_ENABLED: true
+GT_LABEL_DIR: /path/to/generated_evaluation_gt_labels
+PERFORMANCE_IOU_THRESHOLD: 0.5

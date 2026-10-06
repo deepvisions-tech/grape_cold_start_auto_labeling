@@ -1,0 +1,7 @@
+composition,test_period,real_positive_budget,contrast,n_data_subset_seeds,n_training_seeds,n_paired_cells,ap50_95_paired_effect,two_way_bootstrap_ci_lower,two_way_bootstrap_ci_upper,n_positive_cells,n_positive_subset_means,permutation_unit,raw_permutation_p,holm_adjusted_p
+curated,early,10,synthetic-pretrain + fine-tune minus real-only,5,3,15,0.31137907,0.26460042,0.35903606,15,5,data_subset_seed_mean,0.06250000,0.37500000
+curated,early,25,synthetic-pretrain + fine-tune minus real-only,5,3,15,0.26325687,0.22855001,0.30411471,15,5,data_subset_seed_mean,0.06250000,0.37500000
+curated,early,50,synthetic-pretrain + fine-tune minus real-only,5,3,15,0.18189438,0.13141406,0.25795173,15,5,data_subset_seed_mean,0.06250000,0.37500000
+curated,harvest,10,synthetic-pretrain + fine-tune minus real-only,5,3,15,0.33630116,0.28780870,0.38377992,15,5,data_subset_seed_mean,0.06250000,0.37500000
+curated,harvest,25,synthetic-pretrain + fine-tune minus real-only,5,3,15,0.25737978,0.22209840,0.30724236,15,5,data_subset_seed_mean,0.06250000,0.37500000
+curated,harvest,50,synthetic-pretrain + fine-tune minus real-only,5,3,15,0.16057424,0.10784767,0.24340582,15,5,data_subset_seed_mean,0.06250000,0.37500000

@@ -1,0 +1,10 @@
+{
+  "images_per_workflow": 100,
+  "sam3_exemplar_dinov2_seconds": 452,
+  "yolo26x_seconds": 29,
+  "scope": "Image loading, prediction, postprocessing and output operations inside the image-processing loop after model initialization.",
+  "excludes": [
+    "model initialization",
+    "final summary-file export"
+  ]
+}

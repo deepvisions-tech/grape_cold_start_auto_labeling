@@ -1,0 +1,7 @@
+workflow,density_group,density_rule,n_images,n_gt_labels,avg_normalized_gt_box_area,median_human_sec_per_gt_label
+Fully manual,Low,gt_boxes_per_image <= 8,43,270,0.010398,5.07
+Fully manual,High,gt_boxes_per_image > 8,57,879,0.006636,4.33
+SAM3 + image exemplar + DINOv2 then human review,Low,gt_boxes_per_image <= 8,58,291,0.012489,2.22
+SAM3 + image exemplar + DINOv2 then human review,High,gt_boxes_per_image > 8,42,876,0.005530,2.58
+YOLO26x then human review,Low,gt_boxes_per_image <= 8,60,287,0.014082,1.51
+YOLO26x then human review,High,gt_boxes_per_image > 8,40,876,0.005368,2.06

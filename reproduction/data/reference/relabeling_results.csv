@@ -1,0 +1,4 @@
+workflow,n_images,n_gt_labels,human_time_seconds,human_time_hhmmss,auto_label_time_seconds,auto_label_time_mmss,human_sec_per_image,human_sec_per_gt_label,reduction_vs_manual_per_image,reduction_vs_manual_per_gt_label,reviewed_label_f1,reviewed_label_tp,reviewed_label_fp,reviewed_label_fn
+Fully manual,100,1149,5440,01:30:40,,,54.40,4.73,,,0.8875,1053,171,96
+SAM3 + image exemplar + DINOv2 then human review,100,1167,3118,00:51:58,452,07:32,31.18,2.67,0.427,0.436,0.8769,1058,188,109
+YOLO26x then human review,100,1163,2459,00:40:59,29,00:29,24.59,2.11,0.548,0.553,0.8839,1073,192,90

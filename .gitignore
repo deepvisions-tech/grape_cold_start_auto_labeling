@@ -1,0 +1,32 @@
+# External model source and checkpoints
+sam3/
+*.pt
+*.pth
+
+# Local configuration
+configs/auto_labeling.yaml
+*.local.yaml
+
+# Generated data and outputs
+datasets/
+outputs/
+results/
+visualizations/
+verification_runs/
+*.log
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Python and editors
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+.idea/
+.vscode/
+.DS_Store

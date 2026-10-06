@@ -1,0 +1,11 @@
+round,first_block,second_block,third_block,manual_block_time_seconds,sam3_exemplar_dinov2_block_time_seconds,yolo26x_block_time_seconds
+1,M1,S1,Y1,699,442,204
+2,S2,Y2,M2,491,346,261
+3,Y3,M3,S3,493,310,290
+4,M4,Y4,S4,558,267,188
+5,Y5,S5,M5,500,295,263
+6,S6,M6,Y6,550,260,277
+7,M7,S7,Y7,534,334,297
+8,S8,Y8,M8,542,280,248
+9,Y9,M9,S9,591,278,179
+10,M10,Y10,S10,482,306,252

@@ -1,0 +1,277 @@
+{
+  "settings": {
+    "bootstrap_iterations": 50000,
+    "permutation_iterations": 500000,
+    "seed": 42,
+    "permutation_seed": 42,
+    "image_order": "explicit",
+    "rng": "numpy.random.Generator(PCG64)",
+    "metric_aggregation": "micro_from_summed_tp_fp_fn",
+    "bootstrap_unit": "image_cluster",
+    "bootstrap_interval": "percentile_95",
+    "permutation_unit": "paired_image",
+    "zero_denominator_rule": "return_0.0"
+  },
+  "dataset": {
+    "n_images": 300,
+    "methods": [
+      "sam3_only",
+      "sam3_exemplar",
+      "sam3_exemplar_dinov2_pre_gate",
+      "sam3_exemplar_dinov2",
+      "yolo26x_relabeler"
+    ]
+  },
+  "methods": {
+    "sam3_only": {
+      "n_images": 300,
+      "totals": {
+        "tp": 1697,
+        "fp": 172,
+        "fn": 2637
+      },
+      "metrics": {
+        "precision": 0.907972177635099,
+        "recall": 0.39155514536225194,
+        "f1": 0.5471546026116395
+      },
+      "ci_95": {
+        "precision": [
+          0.8827738029719318,
+          0.9314700447338871
+        ],
+        "recall": [
+          0.3371819143267432,
+          0.4502827604372876
+        ],
+        "f1": [
+          0.49152542372881364,
+          0.6021755384124063
+        ]
+      }
+    },
+    "sam3_exemplar": {
+      "n_images": 300,
+      "totals": {
+        "tp": 2693,
+        "fp": 1367,
+        "fn": 1641
+      },
+      "metrics": {
+        "precision": 0.6633004926108375,
+        "recall": 0.6213659437009691,
+        "f1": 0.6416487967595902
+      },
+      "ci_95": {
+        "precision": [
+          0.6383601103492363,
+          0.687810997184362
+        ],
+        "recall": [
+          0.5747656260803817,
+          0.6692090746280287
+        ],
+        "f1": [
+          0.613606468268617,
+          0.6688677775656038
+        ]
+      }
+    },
+    "sam3_exemplar_dinov2_pre_gate": {
+      "n_images": 300,
+      "totals": {
+        "tp": 3448,
+        "fp": 4961,
+        "fn": 886
+      },
+      "metrics": {
+        "precision": 0.41003686526340827,
+        "recall": 0.7955699123211813,
+        "f1": 0.5411598524680217
+      },
+      "ci_95": {
+        "precision": [
+          0.3865439701893412,
+          0.43359746044080016
+        ],
+        "recall": [
+          0.759403157186974,
+          0.8311657238467055
+        ],
+        "f1": [
+          0.5208380209183463,
+          0.5609179321049702
+        ]
+      }
+    },
+    "sam3_exemplar_dinov2": {
+      "n_images": 300,
+      "totals": {
+        "tp": 2783,
+        "fp": 394,
+        "fn": 1551
+      },
+      "metrics": {
+        "precision": 0.87598363235757,
+        "recall": 0.6421319796954315,
+        "f1": 0.7410464651843963
+      },
+      "ci_95": {
+        "precision": [
+          0.8563992477082989,
+          0.8943872755549952
+        ],
+        "recall": [
+          0.5938458514380301,
+          0.6915200197674047
+        ],
+        "f1": [
+          0.7063094552763203,
+          0.77500348720208
+        ]
+      }
+    },
+    "yolo26x_relabeler": {
+      "n_images": 300,
+      "totals": {
+        "tp": 3495,
+        "fp": 203,
+        "fn": 839
+      },
+      "metrics": {
+        "precision": 0.9451054624121147,
+        "recall": 0.8064143977849562,
+        "f1": 0.8702689243027888
+      },
+      "ci_95": {
+        "precision": [
+          0.9339071294419196,
+          0.956085003691935
+        ],
+        "recall": [
+          0.7842277524715727,
+          0.8291940425922014
+        ],
+        "f1": [
+          0.8543353832988889,
+          0.8865004975038071
+        ]
+      }
+    }
+  },
+  "paired_comparisons": {
+    "sam3_exemplar_dinov2_minus_sam3_exemplar": {
+      "left_method": "sam3_exemplar_dinov2",
+      "right_method": "sam3_exemplar",
+      "n_paired_images": 300,
+      "metric_difference": {
+        "precision": 0.21268313974673259,
+        "recall": 0.020766035994462362,
+        "f1": 0.09939766842480613
+      },
+      "ci_95": {
+        "precision": [
+          0.18778364811234266,
+          0.23776997651530568
+        ],
+        "recall": [
+          0.0,
+          0.04137603188727335
+        ],
+        "f1": [
+          0.07963615486647573,
+          0.11947994618850433
+        ]
+      },
+      "permutation_test": {
+        "metric": "micro_f1_difference",
+        "alternative": "two-sided",
+        "extremeness_rule": "abs(permuted_difference) >= abs(observed_difference)",
+        "observed_difference": 0.09939766842480613,
+        "iterations": 500000,
+        "extreme_count": 0,
+        "plus_one_correction": true,
+        "p_value": 1.999996000008e-06
+      }
+    }
+  },
+  "gate_diagnostic": {
+    "after_method": "sam3_exemplar_dinov2",
+    "before_method": "sam3_exemplar_dinov2_pre_gate",
+    "n_paired_images": 300,
+    "same_candidate_pool_verified": true,
+    "before": {
+      "n_images": 300,
+      "totals": {
+        "tp": 3448,
+        "fp": 4961,
+        "fn": 886
+      },
+      "metrics": {
+        "precision": 0.41003686526340827,
+        "recall": 0.7955699123211813,
+        "f1": 0.5411598524680217
+      },
+      "ci_95": {
+        "precision": [
+          0.3865439701893412,
+          0.43359746044080016
+        ],
+        "recall": [
+          0.759403157186974,
+          0.8311657238467055
+        ],
+        "f1": [
+          0.5208380209183463,
+          0.5609179321049702
+        ]
+      }
+    },
+    "after": {
+      "n_images": 300,
+      "totals": {
+        "tp": 2783,
+        "fp": 394,
+        "fn": 1551
+      },
+      "metrics": {
+        "precision": 0.87598363235757,
+        "recall": 0.6421319796954315,
+        "f1": 0.7410464651843963
+      },
+      "ci_95": {
+        "precision": [
+          0.8563992477082989,
+          0.8943872755549952
+        ],
+        "recall": [
+          0.5938458514380301,
+          0.6915200197674047
+        ],
+        "f1": [
+          0.7063094552763203,
+          0.77500348720208
+        ]
+      }
+    },
+    "metric_difference": {
+      "precision": 0.4659467670941618,
+      "recall": -0.1534379326257499,
+      "f1": 0.19988661271637465
+    },
+    "ci_95": {
+      "precision": [
+        0.44064882713551257,
+        0.49101314277435065
+      ],
+      "recall": [
+        -0.1758738733124473,
+        -0.13077843615904086
+      ],
+      "f1": [
+        0.1625632616579676,
+        0.23756249748076375
+      ]
+    }
+  }
+}

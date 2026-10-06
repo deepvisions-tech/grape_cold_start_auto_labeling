@@ -1,0 +1,7 @@
+composition,test_period,real_positive_budget,contrast,n_seed_pairs,ap50_95_paired_effect,bootstrap_ci_lower,bootstrap_ci_upper,n_positive,raw_permutation_p,holm_adjusted_p
+deployment,early,10,synthetic-pretrain + fine-tune minus real-only,15,0.22746709,0.20982165,0.24632551,15,0.00006104,0.00036621
+deployment,early,100,synthetic-pretrain + fine-tune minus real-only,15,0.17335830,0.15484949,0.19173839,15,0.00006104,0.00036621
+deployment,early,214,synthetic-pretrain + fine-tune minus real-only,15,0.07187389,0.05581848,0.08772275,15,0.00006104,0.00036621
+deployment,harvest,10,synthetic-pretrain + fine-tune minus real-only,15,0.28017858,0.26331066,0.29913461,15,0.00006104,0.00036621
+deployment,harvest,100,synthetic-pretrain + fine-tune minus real-only,15,0.14517898,0.12929978,0.16408748,15,0.00006104,0.00036621
+deployment,harvest,214,synthetic-pretrain + fine-tune minus real-only,15,0.05623891,0.04219365,0.07243886,15,0.00006104,0.00036621

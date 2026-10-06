@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grape-cold-start-detection"
+version = "0.1.0"
+description = "SAM3-DINOv2 label recovery for paired vineyard images"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "PolyForm-Noncommercial-1.0.0"
+license-files = ["LICENSE", "NOTICE", "THIRD_PARTY_NOTICES.md"]
+dependencies = [
+  "timm==1.0.27",
+  "einops==0.8.2",
+  "huggingface-hub==1.16.1",
+  "numpy==1.26.4",
+  "opencv-python==4.10.0.82",
+  "pillow==12.2.0",
+  "pycocotools==2.0.11",
+  "psutil==7.2.2",
+  "pyyaml==6.0.3",
+  "tqdm==4.67.3",
+]
+
+[project.scripts]
+grape-auto-label = "grape_auto_labeling.cli:console_main"
+grape-label-analysis = "grape_auto_labeling.reproduction.statistics:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["grape_auto_labeling", "grape_auto_labeling.*"]
+namespaces = false

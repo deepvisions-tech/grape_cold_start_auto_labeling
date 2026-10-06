@@ -1,0 +1,1395 @@
+[
+  {
+    "file": "label_recovery_statistics.json",
+    "path": [
+      "methods",
+      "sam3_only",
+      "metrics",
+      "precision"
+    ],
+    "expected": "90.8",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "label_recovery_statistics.json",
+    "path": [
+      "methods",
+      "sam3_only",
+      "metrics",
+      "recall"
+    ],
+    "expected": "39.2",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "label_recovery_statistics.json",
+    "path": [
+      "methods",
+      "sam3_only",
+      "metrics",
+      "f1"
+    ],
+    "expected": "54.7",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "label_recovery_statistics.json",
+    "path": [
+      "methods",
+      "sam3_only",
+      "ci_95",
+      "f1",
+      0
+    ],
+    "expected": "49.2",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "label_recovery_statistics.json",
+    "path": [
+      "methods",
+      "sam3_only",
+      "ci_95",
+      "f1",
+      1
+    ],
+    "expected": "60.2",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "label_recovery_statistics.json",
+    "path": [
+      "methods",
+      "sam3_exemplar",
+      "metrics",
+      "precision"
+    ],
+    "expected": "66.3",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "label_recovery_statistics.json",
+    "path": [
+      "methods",
+      "sam3_exemplar",
+      "metrics",
+      "recall"
+    ],
+    "expected": "62.1",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "label_recovery_statistics.json",
+    "path": [
+      "methods",
+      "sam3_exemplar",
+      "metrics",
+      "f1"
+    ],
+    "expected": "64.2",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "label_recovery_statistics.json",
+    "path": [
+      "methods",
+      "sam3_exemplar",
+      "ci_95",
+      "f1",
+      0
+    ],
+    "expected": "61.4",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "label_recovery_statistics.json",
+    "path": [
+      "methods",
+      "sam3_exemplar",
+      "ci_95",
+      "f1",
+      1
+    ],
+    "expected": "66.9",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "label_recovery_statistics.json",
+    "path": [
+      "methods",
+      "sam3_exemplar_dinov2_pre_gate",
+      "metrics",
+      "precision"
+    ],
+    "expected": "41.0",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "label_recovery_statistics.json",
+    "path": [
+      "methods",
+      "sam3_exemplar_dinov2_pre_gate",
+      "metrics",
+      "recall"
+    ],
+    "expected": "79.6",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "label_recovery_statistics.json",
+    "path": [
+      "methods",
+      "sam3_exemplar_dinov2_pre_gate",
+      "metrics",
+      "f1"
+    ],
+    "expected": "54.1",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "label_recovery_statistics.json",
+    "path": [
+      "methods",
+      "sam3_exemplar_dinov2_pre_gate",
+      "ci_95",
+      "f1",
+      0
+    ],
+    "expected": "52.1",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "label_recovery_statistics.json",
+    "path": [
+      "methods",
+      "sam3_exemplar_dinov2_pre_gate",
+      "ci_95",
+      "f1",
+      1
+    ],
+    "expected": "56.1",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "label_recovery_statistics.json",
+    "path": [
+      "methods",
+      "sam3_exemplar_dinov2",
+      "metrics",
+      "precision"
+    ],
+    "expected": "87.6",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "label_recovery_statistics.json",
+    "path": [
+      "methods",
+      "sam3_exemplar_dinov2",
+      "metrics",
+      "recall"
+    ],
+    "expected": "64.2",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "label_recovery_statistics.json",
+    "path": [
+      "methods",
+      "sam3_exemplar_dinov2",
+      "metrics",
+      "f1"
+    ],
+    "expected": "74.1",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "label_recovery_statistics.json",
+    "path": [
+      "methods",
+      "sam3_exemplar_dinov2",
+      "ci_95",
+      "f1",
+      0
+    ],
+    "expected": "70.6",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "label_recovery_statistics.json",
+    "path": [
+      "methods",
+      "sam3_exemplar_dinov2",
+      "ci_95",
+      "f1",
+      1
+    ],
+    "expected": "77.5",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "label_recovery_statistics.json",
+    "path": [
+      "methods",
+      "yolo26x_relabeler",
+      "metrics",
+      "precision"
+    ],
+    "expected": "94.5",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "label_recovery_statistics.json",
+    "path": [
+      "methods",
+      "yolo26x_relabeler",
+      "metrics",
+      "recall"
+    ],
+    "expected": "80.6",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "label_recovery_statistics.json",
+    "path": [
+      "methods",
+      "yolo26x_relabeler",
+      "metrics",
+      "f1"
+    ],
+    "expected": "87.0",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "label_recovery_statistics.json",
+    "path": [
+      "methods",
+      "yolo26x_relabeler",
+      "ci_95",
+      "f1",
+      0
+    ],
+    "expected": "85.4",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "label_recovery_statistics.json",
+    "path": [
+      "methods",
+      "yolo26x_relabeler",
+      "ci_95",
+      "f1",
+      1
+    ],
+    "expected": "88.7",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "annotation_statistics.json",
+    "path": [
+      "contrasts",
+      0,
+      "saved_seconds_per_image"
+    ],
+    "expected": "23.22",
+    "decimals": 2,
+    "scale": 1
+  },
+  {
+    "file": "annotation_statistics.json",
+    "path": [
+      "contrasts",
+      0,
+      "saved_seconds_ci95",
+      0
+    ],
+    "expected": "19.83",
+    "decimals": 2,
+    "scale": 1
+  },
+  {
+    "file": "annotation_statistics.json",
+    "path": [
+      "contrasts",
+      0,
+      "saved_seconds_ci95",
+      1
+    ],
+    "expected": "26.58",
+    "decimals": 2,
+    "scale": 1
+  },
+  {
+    "file": "annotation_statistics.json",
+    "path": [
+      "contrasts",
+      1,
+      "saved_seconds_per_image"
+    ],
+    "expected": "29.81",
+    "decimals": 2,
+    "scale": 1
+  },
+  {
+    "file": "annotation_statistics.json",
+    "path": [
+      "contrasts",
+      1,
+      "saved_seconds_ci95",
+      0
+    ],
+    "expected": "24.65",
+    "decimals": 2,
+    "scale": 1
+  },
+  {
+    "file": "annotation_statistics.json",
+    "path": [
+      "contrasts",
+      1,
+      "saved_seconds_ci95",
+      1
+    ],
+    "expected": "35.86",
+    "decimals": 2,
+    "scale": 1
+  },
+  {
+    "file": "annotation_statistics.json",
+    "path": [
+      "contrasts",
+      0,
+      "reduction"
+    ],
+    "expected": "42.7",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "annotation_statistics.json",
+    "path": [
+      "contrasts",
+      0,
+      "reduction_ci95",
+      0
+    ],
+    "expected": "37.8",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "annotation_statistics.json",
+    "path": [
+      "contrasts",
+      0,
+      "reduction_ci95",
+      1
+    ],
+    "expected": "47.6",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "annotation_statistics.json",
+    "path": [
+      "contrasts",
+      0,
+      "holm_p"
+    ],
+    "expected": "0.0039",
+    "decimals": 4,
+    "scale": 1
+  },
+  {
+    "file": "annotation_statistics.json",
+    "path": [
+      "contrasts",
+      1,
+      "reduction"
+    ],
+    "expected": "54.8",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "annotation_statistics.json",
+    "path": [
+      "contrasts",
+      1,
+      "reduction_ci95",
+      0
+    ],
+    "expected": "48.0",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "annotation_statistics.json",
+    "path": [
+      "contrasts",
+      1,
+      "reduction_ci95",
+      1
+    ],
+    "expected": "61.6",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "annotation_statistics.json",
+    "path": [
+      "contrasts",
+      1,
+      "holm_p"
+    ],
+    "expected": "0.0039",
+    "decimals": 4,
+    "scale": 1
+  },
+  {
+    "file": "annotation_statistics.json",
+    "path": [
+      "density",
+      0,
+      "median_seconds_per_box"
+    ],
+    "expected": "5.07",
+    "decimals": 2,
+    "scale": 1
+  },
+  {
+    "file": "annotation_statistics.json",
+    "path": [
+      "density",
+      0,
+      "ci95",
+      0
+    ],
+    "expected": "4.67",
+    "decimals": 2,
+    "scale": 1
+  },
+  {
+    "file": "annotation_statistics.json",
+    "path": [
+      "density",
+      0,
+      "ci95",
+      1
+    ],
+    "expected": "5.85",
+    "decimals": 2,
+    "scale": 1
+  },
+  {
+    "file": "annotation_statistics.json",
+    "path": [
+      "density",
+      1,
+      "median_seconds_per_box"
+    ],
+    "expected": "4.33",
+    "decimals": 2,
+    "scale": 1
+  },
+  {
+    "file": "annotation_statistics.json",
+    "path": [
+      "density",
+      1,
+      "ci95",
+      0
+    ],
+    "expected": "4.16",
+    "decimals": 2,
+    "scale": 1
+  },
+  {
+    "file": "annotation_statistics.json",
+    "path": [
+      "density",
+      1,
+      "ci95",
+      1
+    ],
+    "expected": "4.76",
+    "decimals": 2,
+    "scale": 1
+  },
+  {
+    "file": "annotation_statistics.json",
+    "path": [
+      "density",
+      2,
+      "median_seconds_per_box"
+    ],
+    "expected": "2.22",
+    "decimals": 2,
+    "scale": 1
+  },
+  {
+    "file": "annotation_statistics.json",
+    "path": [
+      "density",
+      2,
+      "ci95",
+      0
+    ],
+    "expected": "1.78",
+    "decimals": 2,
+    "scale": 1
+  },
+  {
+    "file": "annotation_statistics.json",
+    "path": [
+      "density",
+      2,
+      "ci95",
+      1
+    ],
+    "expected": "2.58",
+    "decimals": 2,
+    "scale": 1
+  },
+  {
+    "file": "annotation_statistics.json",
+    "path": [
+      "density",
+      3,
+      "median_seconds_per_box"
+    ],
+    "expected": "2.58",
+    "decimals": 2,
+    "scale": 1
+  },
+  {
+    "file": "annotation_statistics.json",
+    "path": [
+      "density",
+      3,
+      "ci95",
+      0
+    ],
+    "expected": "2.25",
+    "decimals": 2,
+    "scale": 1
+  },
+  {
+    "file": "annotation_statistics.json",
+    "path": [
+      "density",
+      3,
+      "ci95",
+      1
+    ],
+    "expected": "2.94",
+    "decimals": 2,
+    "scale": 1
+  },
+  {
+    "file": "annotation_statistics.json",
+    "path": [
+      "density",
+      4,
+      "median_seconds_per_box"
+    ],
+    "expected": "1.51",
+    "decimals": 2,
+    "scale": 1
+  },
+  {
+    "file": "annotation_statistics.json",
+    "path": [
+      "density",
+      4,
+      "ci95",
+      0
+    ],
+    "expected": "1.21",
+    "decimals": 2,
+    "scale": 1
+  },
+  {
+    "file": "annotation_statistics.json",
+    "path": [
+      "density",
+      4,
+      "ci95",
+      1
+    ],
+    "expected": "1.96",
+    "decimals": 2,
+    "scale": 1
+  },
+  {
+    "file": "annotation_statistics.json",
+    "path": [
+      "density",
+      5,
+      "median_seconds_per_box"
+    ],
+    "expected": "2.06",
+    "decimals": 2,
+    "scale": 1
+  },
+  {
+    "file": "annotation_statistics.json",
+    "path": [
+      "density",
+      5,
+      "ci95",
+      0
+    ],
+    "expected": "1.78",
+    "decimals": 2,
+    "scale": 1
+  },
+  {
+    "file": "annotation_statistics.json",
+    "path": [
+      "density",
+      5,
+      "ci95",
+      1
+    ],
+    "expected": "2.48",
+    "decimals": 2,
+    "scale": 1
+  },
+  {
+    "file": "low_budget_subset_results.csv",
+    "path": [
+      0,
+      "ap50_95_mean"
+    ],
+    "expected": "3.3",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_results.csv",
+    "path": [
+      0,
+      "ap50_95_sample_sd"
+    ],
+    "expected": "2.5",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_results.csv",
+    "path": [
+      1,
+      "ap50_95_mean"
+    ],
+    "expected": "13.5",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_results.csv",
+    "path": [
+      1,
+      "ap50_95_sample_sd"
+    ],
+    "expected": "3.4",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_results.csv",
+    "path": [
+      2,
+      "ap50_95_mean"
+    ],
+    "expected": "26.7",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_results.csv",
+    "path": [
+      2,
+      "ap50_95_sample_sd"
+    ],
+    "expected": "8.1",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_results.csv",
+    "path": [
+      3,
+      "ap50_95_mean"
+    ],
+    "expected": "3.7",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_results.csv",
+    "path": [
+      3,
+      "ap50_95_sample_sd"
+    ],
+    "expected": "3.2",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_results.csv",
+    "path": [
+      4,
+      "ap50_95_mean"
+    ],
+    "expected": "15.6",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_results.csv",
+    "path": [
+      4,
+      "ap50_95_sample_sd"
+    ],
+    "expected": "4.5",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_results.csv",
+    "path": [
+      5,
+      "ap50_95_mean"
+    ],
+    "expected": "28.7",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_results.csv",
+    "path": [
+      5,
+      "ap50_95_sample_sd"
+    ],
+    "expected": "8.7",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_results.csv",
+    "path": [
+      6,
+      "ap50_95_mean"
+    ],
+    "expected": "34.5",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_results.csv",
+    "path": [
+      6,
+      "ap50_95_sample_sd"
+    ],
+    "expected": "4.9",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_results.csv",
+    "path": [
+      7,
+      "ap50_95_mean"
+    ],
+    "expected": "39.8",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_results.csv",
+    "path": [
+      7,
+      "ap50_95_sample_sd"
+    ],
+    "expected": "3.6",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_results.csv",
+    "path": [
+      8,
+      "ap50_95_mean"
+    ],
+    "expected": "44.9",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_results.csv",
+    "path": [
+      8,
+      "ap50_95_sample_sd"
+    ],
+    "expected": "3.5",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_results.csv",
+    "path": [
+      9,
+      "ap50_95_mean"
+    ],
+    "expected": "37.4",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_results.csv",
+    "path": [
+      9,
+      "ap50_95_sample_sd"
+    ],
+    "expected": "5.3",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_results.csv",
+    "path": [
+      10,
+      "ap50_95_mean"
+    ],
+    "expected": "41.3",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_results.csv",
+    "path": [
+      10,
+      "ap50_95_sample_sd"
+    ],
+    "expected": "3.7",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_results.csv",
+    "path": [
+      11,
+      "ap50_95_mean"
+    ],
+    "expected": "44.7",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_results.csv",
+    "path": [
+      11,
+      "ap50_95_sample_sd"
+    ],
+    "expected": "3.0",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      0,
+      "ap50_95_paired_effect"
+    ],
+    "expected": "31.1",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      0,
+      "two_way_bootstrap_ci_lower"
+    ],
+    "expected": "26.5",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      0,
+      "two_way_bootstrap_ci_upper"
+    ],
+    "expected": "35.9",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      0,
+      "n_positive_cells"
+    ],
+    "expected": "15",
+    "decimals": 0,
+    "scale": 1
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      0,
+      "n_positive_subset_means"
+    ],
+    "expected": "5",
+    "decimals": 0,
+    "scale": 1
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      0,
+      "raw_permutation_p"
+    ],
+    "expected": "0.0625",
+    "decimals": 4,
+    "scale": 1
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      0,
+      "holm_adjusted_p"
+    ],
+    "expected": "0.375",
+    "decimals": 3,
+    "scale": 1
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      1,
+      "ap50_95_paired_effect"
+    ],
+    "expected": "26.3",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      1,
+      "two_way_bootstrap_ci_lower"
+    ],
+    "expected": "22.9",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      1,
+      "two_way_bootstrap_ci_upper"
+    ],
+    "expected": "30.4",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      1,
+      "n_positive_cells"
+    ],
+    "expected": "15",
+    "decimals": 0,
+    "scale": 1
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      1,
+      "n_positive_subset_means"
+    ],
+    "expected": "5",
+    "decimals": 0,
+    "scale": 1
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      1,
+      "raw_permutation_p"
+    ],
+    "expected": "0.0625",
+    "decimals": 4,
+    "scale": 1
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      1,
+      "holm_adjusted_p"
+    ],
+    "expected": "0.375",
+    "decimals": 3,
+    "scale": 1
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      2,
+      "ap50_95_paired_effect"
+    ],
+    "expected": "18.2",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      2,
+      "two_way_bootstrap_ci_lower"
+    ],
+    "expected": "13.1",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      2,
+      "two_way_bootstrap_ci_upper"
+    ],
+    "expected": "25.8",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      2,
+      "n_positive_cells"
+    ],
+    "expected": "15",
+    "decimals": 0,
+    "scale": 1
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      2,
+      "n_positive_subset_means"
+    ],
+    "expected": "5",
+    "decimals": 0,
+    "scale": 1
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      2,
+      "raw_permutation_p"
+    ],
+    "expected": "0.0625",
+    "decimals": 4,
+    "scale": 1
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      2,
+      "holm_adjusted_p"
+    ],
+    "expected": "0.375",
+    "decimals": 3,
+    "scale": 1
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      3,
+      "ap50_95_paired_effect"
+    ],
+    "expected": "33.6",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      3,
+      "two_way_bootstrap_ci_lower"
+    ],
+    "expected": "28.8",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      3,
+      "two_way_bootstrap_ci_upper"
+    ],
+    "expected": "38.4",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      3,
+      "n_positive_cells"
+    ],
+    "expected": "15",
+    "decimals": 0,
+    "scale": 1
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      3,
+      "n_positive_subset_means"
+    ],
+    "expected": "5",
+    "decimals": 0,
+    "scale": 1
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      3,
+      "raw_permutation_p"
+    ],
+    "expected": "0.0625",
+    "decimals": 4,
+    "scale": 1
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      3,
+      "holm_adjusted_p"
+    ],
+    "expected": "0.375",
+    "decimals": 3,
+    "scale": 1
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      4,
+      "ap50_95_paired_effect"
+    ],
+    "expected": "25.7",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      4,
+      "two_way_bootstrap_ci_lower"
+    ],
+    "expected": "22.2",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      4,
+      "two_way_bootstrap_ci_upper"
+    ],
+    "expected": "30.7",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      4,
+      "n_positive_cells"
+    ],
+    "expected": "15",
+    "decimals": 0,
+    "scale": 1
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      4,
+      "n_positive_subset_means"
+    ],
+    "expected": "5",
+    "decimals": 0,
+    "scale": 1
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      4,
+      "raw_permutation_p"
+    ],
+    "expected": "0.0625",
+    "decimals": 4,
+    "scale": 1
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      4,
+      "holm_adjusted_p"
+    ],
+    "expected": "0.375",
+    "decimals": 3,
+    "scale": 1
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      5,
+      "ap50_95_paired_effect"
+    ],
+    "expected": "16.1",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      5,
+      "two_way_bootstrap_ci_lower"
+    ],
+    "expected": "10.8",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      5,
+      "two_way_bootstrap_ci_upper"
+    ],
+    "expected": "24.3",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      5,
+      "n_positive_cells"
+    ],
+    "expected": "15",
+    "decimals": 0,
+    "scale": 1
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      5,
+      "n_positive_subset_means"
+    ],
+    "expected": "5",
+    "decimals": 0,
+    "scale": 1
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      5,
+      "raw_permutation_p"
+    ],
+    "expected": "0.0625",
+    "decimals": 4,
+    "scale": 1
+  },
+  {
+    "file": "low_budget_subset_paired_effects.csv",
+    "path": [
+      5,
+      "holm_adjusted_p"
+    ],
+    "expected": "0.375",
+    "decimals": 3,
+    "scale": 1
+  },
+  {
+    "file": "detector_paired_effects.csv",
+    "path": [
+      5,
+      "bootstrap_ci_upper"
+    ],
+    "expected": "33.9",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "label_recovery_statistics.json",
+    "path": [
+      "gate_diagnostic",
+      "ci_95",
+      "f1",
+      1
+    ],
+    "expected": "23.8",
+    "decimals": 1,
+    "scale": 100
+  },
+  {
+    "file": "adabn_selection_statistics.json",
+    "path": [
+      "ap50_95_paired_effect"
+    ],
+    "expected": "-0.011",
+    "decimals": 3,
+    "scale": 100
+  },
+  {
+    "file": "adabn_selection_statistics.json",
+    "path": [
+      "crossed_bootstrap_ci95",
+      0
+    ],
+    "expected": "-0.039",
+    "decimals": 3,
+    "scale": 100
+  },
+  {
+    "file": "adabn_selection_statistics.json",
+    "path": [
+      "crossed_bootstrap_ci95",
+      1
+    ],
+    "expected": "0.015",
+    "decimals": 3,
+    "scale": 100
+  }
+]

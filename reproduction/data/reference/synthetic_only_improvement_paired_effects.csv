@@ -1,0 +1,3 @@
+composition,test_period,contrast,n_seed_pairs,ap50_95_paired_effect,bootstrap_ci_lower,bootstrap_ci_upper,n_positive,raw_permutation_p,holm_adjusted_p
+curated,early,+AdaBN minus no-AdaBN,15,0.11028591,0.09984100,0.12039095,15,0.00006104,0.00012207
+curated,harvest,+AdaBN minus no-AdaBN,15,0.09324126,0.08306148,0.10256553,15,0.00006104,0.00012207

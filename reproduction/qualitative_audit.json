@@ -1,0 +1,64 @@
+{
+  "audit_date": "2026-09-14",
+  "membership_sha256": "5fb7987e2963433d4d9f7bbbe0388272633ac396137d9cbdb4027d189bb0d4d4",
+  "scope": "Five qualitative evaluation examples; fixed-main datasets, subset-resampling excluded",
+  "checked_exclusion_sets": [
+    "adabn_setting_background_screen",
+    "deployment_calibration",
+    "generation_background_batch1",
+    "generation_background_batch3",
+    "generation_pool",
+    "prompt_train",
+    "prompt_validation",
+    "real_k100_train",
+    "real_k10_train",
+    "real_k214_train",
+    "real_k25_train",
+    "real_k50_train",
+    "real_training_union",
+    "real_validation",
+    "relabeler_train",
+    "relabeler_validation",
+    "synthetic_train",
+    "synthetic_validation"
+  ],
+  "examples": [
+    {
+      "panel": "S3(a--d)",
+      "image_id": "lr_0134",
+      "evaluation_set": "label_recovery_reference",
+      "absent_from_training_validation_adaptation_and_calibration_at_source_frame_level": true,
+      "shares_source_frame_with_distinct_timing_tiles": true
+    },
+    {
+      "panel": "S4(a)",
+      "image_id": "early_tile_02317",
+      "evaluation_set": "early_curated",
+      "absent_from_training_validation_adaptation_and_calibration_at_source_frame_level": true,
+      "shares_source_frame_with_distinct_timing_tiles": false
+    },
+    {
+      "panel": "S4(b)",
+      "image_id": "early_tile_00802",
+      "evaluation_set": "early_curated",
+      "absent_from_training_validation_adaptation_and_calibration_at_source_frame_level": true,
+      "shares_source_frame_with_distinct_timing_tiles": false
+    },
+    {
+      "panel": "S4(c)",
+      "image_id": "early_tile_00512",
+      "evaluation_set": "early_curated",
+      "absent_from_training_validation_adaptation_and_calibration_at_source_frame_level": true,
+      "shares_source_frame_with_distinct_timing_tiles": false
+    },
+    {
+      "panel": "S4(d--f)",
+      "image_id": "early_tile_01023",
+      "evaluation_set": "early_curated",
+      "absent_from_training_validation_adaptation_and_calibration_at_source_frame_level": true,
+      "shares_source_frame_with_distinct_timing_tiles": false
+    }
+  ],
+  "reference_timing_split_unit": "generated_image; source frames may be shared",
+  "images_or_original_filenames_in_report": false
+}
